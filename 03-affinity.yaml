@@ -7,7 +7,8 @@ spec:
     nodeAffinity:
       # hard ware
       preferredDuringSchedulingIgnoredDuringExecution:
-        nodeSelectorTerms:
+      - weight: 1
+        preference:
         - matchExpressions:
           - key: hardware
             operator: In
